@@ -9,7 +9,7 @@ const userRouter = require('./routes/userAPIRoute');
 // const notFound = require('./middlewares/notFound');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 
 app.set('view engine', 'pug');
