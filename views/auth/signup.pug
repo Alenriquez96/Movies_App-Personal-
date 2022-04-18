@@ -1,0 +1,20 @@
+include ../head.pug
+body(id="body-signup")
+  header(class="header-login-signup")
+    a(href="/login", class="signup-signup-top") Login 
+    
+  div(class="div-form")  
+    section(class="section-login-signup-form")
+      h2(class="h2-login-signup") Sign up
+      form(action="/signup", method="post", class="div-form" class="form-login-signup") 
+        label(for="name") Name 
+        input(type="text" name="name")
+        label(for="surname") Surname 
+        input(type="text" name="surname")
+        label(for='email') Email
+        input(type='text' name='email')
+        label(for='pass') Password
+        input(type='password' name='pass')
+        label(for='pass2') Repeat password
+        input(type='password' name='pass2')
+        button#signUpRegister SIGN UP

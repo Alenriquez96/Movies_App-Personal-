@@ -1,0 +1,40 @@
+include ../head.pug
+
+    header
+            nav(class='navbar')
+                    img(src="../../img/movies.svg", alt="logo" href="/dashboard", class="nav-branding")
+                    ul(class="nav-menu")
+                        li(class="nav-item")
+                            a(href="/movies", class="nav-link") Movies
+                        li(class="nav-item")
+                            a(href="/createMovie", class="nav-link") Create movie
+                        li(class="nav-item")
+                            a(href="/logout", class="nav-link") Logout
+                    div(class="hamburger")
+                            span(class="bar")
+                            span(class="bar")
+                            span(class="bar")
+
+    h2 Editar una película
+        - let idMovie = film._id;
+        form(action="/editMovie/" + idMovie , method="POST") 
+            label(for="title") Titulo
+            input(type="text" name="title" value=film.title)
+            label(for="director") Director 
+            input(type="text" name="director" value=film.director)
+            label(for="year") Año
+            input(type="text" name="year" value=film.year)
+            label(for="casting") Reparto
+            input(type="text" name="casting" value=film.casting)
+            label(for="plot") Sinopsis
+            input(type="text" name="plot" value=film.plot)
+            label(for="rating") Rating 
+            input(type="text" name="rating" value=film.rating)
+            label(for="duration") Duración
+            input(type="text" name="duration" value=film.duration)
+            label(for="genre") Genero
+            input(type="text" name="genre" value=film.genre)
+            label(for="image") Cartel
+            input(type="text" name="image" value=film.image)
+            button(type="submit") Guardar
+

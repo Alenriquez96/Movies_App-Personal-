@@ -1,0 +1,45 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/styles.css")
+        title My movies
+    body 
+        include ../head.pug
+
+        header
+            nav(class='navbar')
+                    img(src="../../img/movies.svg", alt="logo" href="/dashboard", class="nav-branding")
+                    ul(class="nav-menu")
+                        li(class="nav-item")
+                            a(href="/movies", class="nav-link") Movies
+                        li(class="nav-item")
+                            a(href="/createMovie", class="nav-link") Create movie
+                        li(class="nav-item")
+                            a(href="/logout", class="nav-link") Logout
+                    div(class="hamburger")
+                            span(class="bar")
+                            span(class="bar")
+                            span(class="bar")
+        h2 Mis peliculas
+        a(href='/createmovie') Crear una peli
+ 
+        section  
+                each film in films
+                    div  
+                        p Título: #{film.title}
+                        p Año: #{film.year}
+                        p Director: #{film.director}
+                        p Reparto: #{film.casting}
+                        p Sipnosis: #{film.plot}
+                        p Género: #{film.genre}
+                        p Opinión: #{film.rating}
+                        p Duración: #{film.duration}                     
+                        img(src=film.image, alt="Imagen de la película") 
+                        - var idMovie = film._id;
+                        button#removeMovie(class="btn_delete" value = idMovie) Borrar
+                        a#editMovie(href='/editMovie/' + idMovie) Editar
+
+        script(src="/js/deleteMovie.js") 

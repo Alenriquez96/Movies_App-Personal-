@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/styles.css")
+        title Your movieApp
+    body(id="body-home") 
+
+        include   ../head.pug
+        div(id="container-astronauta-login-signup")
+            div(id="div-astronauta")
+                img(src="../img/astronauta.movies.svg", alt="astronauta con palomitas" id="astronautamovies")
+            section(id="container-login-signup")
+                div(id="div-login")
+                    a(href="/login" id="login-home") LOGIN
+                div(id="div-signup")  
+                    a(href="/signup" id="signup-home") SIGN UP

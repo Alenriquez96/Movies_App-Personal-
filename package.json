@@ -1,0 +1,40 @@
+{
+  "name": "movies_intermediate_project",
+  "version": "1.0.0",
+  "description": "Proyecto intermedio de películas con Backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alenriquez96/Movies_Intermediate_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alenriquez96/Movies_Intermediate_Project/issues"
+  },
+  "homepage": "https://github.com/Alenriquez96/Movies_Intermediate_Project#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cypress": "^9.5.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.8",
+    "node-fetch": "^2.6.7",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.7.3",
+    "pug": "^3.0.2",
+    "puppeteer": "^13.5.2",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
+  }
+}

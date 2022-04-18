@@ -1,0 +1,29 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/styles.css")
+    title Login
+
+    include ../head.pug
+  body(id="body-login") 
+
+    header(class="header-login-signup")
+      a(href="/signup" class="signup-signup-top") Sign up
+
+    div(class="div-form")
+      section(class="section-login-signup-form")
+        h2(class="h2-login-signup") Login
+        form(action="/login", method="post" class="form-login-signup")
+          label(for='email') Email
+          input(type='text' name='email')
+          label(for='pass') Password
+          input(type='password' name='pass')
+          a(href="/recoverPassword" onclick="window.open(this.href);return false;") Forgot the password?
+          button#login LOGIN
+
+        div(class="google-btn-div")
+          img(src="https://img.icons8.com/color/48/000000/google-logo.png", alt="google", class="google-logo")
+          a(href="/auth/google", id="google") Login with Google

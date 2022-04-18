@@ -1,0 +1,49 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/styles.css")
+        
+    body 
+
+        include ../head.pug
+
+        body(id="body-recoverpass")
+        header
+                nav(class='navbar')
+                                img(src="../../img/movies.svg", alt="logo" href="/dashboard", class="nav-branding")
+                                ul(class="nav-menu")
+                                        li(class="nav-item")
+                                                a(href="/dashboard", class="nav-link") Dashboard
+                                        li(class="nav-item")
+                                                a(href="/movies", class="nav-link") My movies
+                                        li(class="nav-item")
+                                                a(href="/logout", class="nav-link") Logout
+                                div(class="hamburger")
+                                        span(class="bar")
+                                        span(class="bar")
+                                        span(class="bar")
+
+    div(class="mymovies")
+        section(class="myfavsmovies-section")
+            h2(class="h2-login-signup") My favourite movies
+            if films 
+            each film in films
+                div(class="myfavmovie")  
+                    p Title: #{film.title}
+                    p Year: #{film.year}
+                    p Director: #{film.director}
+                    p Actorlist: #{film.casting}
+                    p Plot: #{film.plot}
+                    p Genre: #{film.genre}
+                    p Reviews: #{film.rating}
+                    p Duration: #{film.duration}
+                    img(src=film.image, alt="Imagen de la película") 
+                    - let idMovie = film._id;
+                    button(class="btn_fav" value = idMovie) Favoritos
+   
+        script(src="/js/favMovie.js")
+        script(src="/js/hamburger.js") 
+

@@ -1,0 +1,6 @@
+{
+    "env": {
+        "URL_BASE": "http://localhost:3000/" 
+    },
+    "chromeWebSecurity": false
+}

@@ -1,0 +1,21 @@
+include ../head.pug
+body(id="body-recoverpass")
+
+    div(class="div-form")
+        section(class="section-login-signup-form")
+            h2(class="h2-login-signup") Reset your password
+            p Write your new password
+            img(src="../../img/astronauta.svg", alt="astronauta", id="astornauta-recoverpass")
+
+            div(class="div-form-recoverpass")
+                form(action="", method="post" class="form-login-signup")
+
+                    label(for='pass1') Write password
+                    input(type="password", name="pass1")
+
+                    label(for='pass2') Repeat password
+                    input(type="password", name="pass2")
+
+                    button(type="submit" id="recoverpass-submit") RESET PASSWORD
+
+script(src="/js/recoverToken")

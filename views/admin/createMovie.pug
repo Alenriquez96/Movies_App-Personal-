@@ -1,0 +1,45 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/styles.css")
+        title Busca tu movie
+    body 
+
+        header
+            nav(class='navbar')
+                    img(src="../../img/movies.svg", alt="logo" href="/dashboard", class="nav-branding")
+                    ul(class="nav-menu")
+                        li(class="nav-item")
+                            a(href="/movies", class="nav-link") Movies
+                        li(class="nav-item")
+                            a(href="/createMovie", class="nav-link") Create movie
+                        li(class="nav-item")
+                            a(href="/logout", class="nav-link") Logout
+                    div(class="hamburger")
+                            span(class="bar")
+                            span(class="bar")
+                            span(class="bar")
+        h2 Crear una película
+        form(action="/createMovie", method="post") 
+            label(for="title") Titulo
+            input(type="text" name="title")
+            label(for="director") Director 
+            input(type="text" name="director")
+            label(for="year") Año
+            input(type="text" name="year")
+            label(for="casting") Reparto
+            input(type="text" name="casting")
+            label(for="plot") Sinopsis
+            input(type="text" name="plot")
+            label(for="rating") Rating 
+            input(type="text" name="rating")
+            label(for="duration") Duración
+            input(type="text" name="duration")
+            label(for="genre") Genero
+            input(type="text" name="genre")
+            label(for="image") Cartel
+            input(type="text" name="image")
+            button(type="submit") Guardar

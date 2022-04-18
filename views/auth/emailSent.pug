@@ -1,0 +1,11 @@
+include ../head.pug
+
+body(id="body-emailSent")
+    div(class="div-form")
+        section(class="section-login-signup-form")
+            h2(class="h2-login-signup") Email sent! ✅
+            p You will receive soon a link to reset the password.
+            img(src="../../img/astronauta.svg", alt="astronauta", id="astornauta-recoverpass")
+            div(class="div-form-recoverpass")
+                form(action="https://mail.google.com/mail/u/0/?tab=wm#inbox", method="post" class="form-login-signup")
+                    button(type="submit" id="gotologin-submit") CHECK MY INBOX

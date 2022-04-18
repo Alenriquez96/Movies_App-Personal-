@@ -1,0 +1,845 @@
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif
+}
+
+a, button{
+cursor: pointer;
+}
+
+/*************************************************************************+
+
+
+    HOME
+
+
+***************************************************************************/
+
+#body-home,
+#body-login,
+#body-signup,
+#body-dashboard,
+#body-search,
+#body-searchtitle, #body-searchmovietitle {
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+#container-astronauta-login-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-astronauta {
+    display: flex;
+    margin-top: 3em;
+}
+
+#astronautamovies {
+    width: 345px;
+    height: auto;
+}
+
+#container-login-signup {
+    display: flex;
+    width: 70%;
+    margin-top: 4em;
+}
+
+#div-login {
+    display: flex;
+    background-color: #F7404C;
+    width: 100%;
+    text-align: center;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    max-width: 23em;
+}
+
+#login-home {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+#div-signup {
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100%;
+    text-align: center;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-top: 1.5em;
+    max-width: 23em;
+}
+
+#signup-home {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+
+
+/*************************************************************************+
+
+
+    LOGIN & SIGN UP
+
+
+***************************************************************************/
+
+.signup-signup-top{
+    padding: 1em;
+}
+
+.header-login-signup {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h2-login-signup{
+    margin-top: 2em;
+}
+
+.section-login-signup-form {
+    background-color: #F5F8FA;
+    width: 80%;
+    border-radius: 10px;
+    max-width: 25em;
+    margin-bottom: 3em;
+}
+
+.div-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    
+}
+
+.form-login-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    width: 70%;
+    max-width: 25em;
+}
+
+.form-login-signup label,
+.form-login-signup input {
+    margin: 0.2em;
+    height: 35px;
+    width: 100%;
+    max-width: 23em;
+}
+
+.form-login-signup label {
+    margin-left: 14px;
+    margin-top: 9px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#login, #signUpRegister, #recoverpass-submit, #gotologin-submit {
+    margin: 0.2em;
+    width: 100%;
+    background-color: #22172B;
+    color: white;
+    height: 35px;
+    border-style: none;
+    border-radius: 4px;
+    margin-top: 2em;
+}
+
+#recoverpass-submit, #gotologin-submit:hover{
+    background-color: #26202b;
+}
+
+#signUpRegister{
+    margin-bottom: 3em;
+}
+
+
+/*GOOGLE BTN*/
+.google-btn-div {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow: 2px 5px 10px 2px #0000002b;
+    width: 221px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.google-btn-div:hover {
+    transform: scale(1.1);
+}
+
+.google-logo {
+    width: 40px;
+    height: auto;
+}
+
+#google,
+#google-logout-btn {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+/*************************************************************************+
+
+
+    RECOVER PASS
+
+
+***************************************************************************/
+
+
+
+#body-recoverpass, #body-emailSent{
+    background-color: #f5f8fa;
+    
+}
+
+.div-form-recoverpass{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#astornauta-recoverpass{
+    width: 100px;
+    height: auto;
+}
+
+#recoverpass-submit{
+    max-width: 23em;
+}
+
+.div-form-recoverpass label{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    max-width: 23em;
+    margin-left:0;
+}
+
+.div-form-recoverpass form{
+    margin-top:0;
+}
+
+
+
+
+
+
+
+
+
+/*************************************************************************+
+
+
+    DASHBOARD
+
+
+***************************************************************************/
+
+
+#astronautamovies-dashboard{
+    width: 250px;
+    height: auto;
+}
+
+.welcome{
+    font-size: 40px;
+    color: white;
+}
+
+#div-google-welcome{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 1em;
+    
+}
+
+#img-google{
+    width: 100px;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+
+#astronauta-icon{
+    width: 56px;
+    height: auto;
+}
+
+#container-dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#section-buttons-dashboard{
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    width: 80%;
+    max-width: 360px;
+}
+
+#div-astronauta-dashboard{
+    display: flex;
+}
+
+#search-submit{
+    background-color: #fece00;
+    color: black;
+    margin: 0.2em;
+    width: 100%;
+    height: 35px;
+    border-style: none;
+    border-radius: 4px;
+    margin-top: 2em;
+    align-items: center;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#mymovies-submit{
+    background-color: #ffffff;
+    color: black;
+    margin: 0.2em;
+    width: 100%;
+    height: 35px;
+    border-style: none;
+    border-radius: 4px;
+    margin-top: 2em;
+    align-items: center;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-gotodashboard{
+    background-color: #22172B;
+    width: 100%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.div-gotodashboard a{
+    color: white;
+
+}
+
+
+
+
+/*************************************************************************+
+
+
+    SEARCH
+
+
+***************************************************************************/
+
+
+
+.btn_fav{
+    margin: 0.2em;
+    width: 40%;
+    background-color: rgb(243, 14, 14);
+    color: white;
+    height: 35px;
+    border-style: none;
+    border-radius: 4px;
+    margin-top: 2em;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+#sectionDetail>button:hover{
+    transform: scale(1.10);
+  }
+
+.searchForm{
+    
+    padding: 6px 10px;
+    font-size: 17px;
+    border: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-div{
+    display: flex;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-div img{
+    width: 35px;
+    height: auto;
+    display: flex;
+}
+
+#div-search h3{
+    color: white;
+}
+
+#search-btn{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    height: 3em;
+}
+
+#div-search{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.searchForm{
+    width: 100%;
+}
+
+.search-div input{
+    height: 3em;
+    width: 24em;
+}
+
+#div-search h3{
+    margin-bottom: 2em;
+}
+
+
+
+/*________________________________________MENÚ HAMBURGUESA*/
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+    height: 500px;
+}
+
+p {
+    text-align: center;
+}
+
+header {
+    background-color: #F7404C;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar a{
+    color: black;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f7404c;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-right: 5em;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    width: 6em;
+    position: sticky;
+    height: auto;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+        margin-right: 1em;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background-color:#f5f8fa;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-branding {
+        width: 6em;
+    }
+
+    .bar {
+        height: 2px;
+    }
+}
+
+
+
+
+/*************************************************************************+
+
+
+   MY  MOVIES
+
+
+***************************************************************************/
+
+
+
+.mymovies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.myfavmovie{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.myfavmovie img{
+   width: 0;
+   width: 0;
+}
+
+.myfavmovie p{
+    padding: 1em;
+}
+
+.myfavsmovies-section{
+    background-color: #F5F8FA;
+    width: 80%;
+    border-radius: 10px;
+    max-width: 25em;
+    margin-bottom: 3em;
+    display: flex;
+}
+
+
+
+/*______________________________________________________
+
+
+
+SEARCH TITLE
+
+
+__________________________________________________________*/
+
+
+
+.div-film{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: white;
+    margin: 2em;
+
+}
+
+.div-film p{
+    padding: 1em;
+}
+
+
+/*______________________________________________________
+
+
+
+SPINNER
+
+
+__________________________________________________________*/
+
+
+.lds-roller {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fcf;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  /* VISTA DETALLE PELÍCULA */
+
+  #sectionDetail{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  #div-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    padding: 45px;
+    margin-top: 2em;
+  }
+  #sectionDetail>p,#sectionDetail>button,#sectionDetail>img{
+      margin: 20px; 
+  }
+
+  #div-detail p{
+    padding: 12px;
+  }
+
+  #div-detail > img{
+    border-radius: 2%;
+    transition: all 0.3s ease-out;
+  }
+  #div-detail > img:hover{
+    transform: scale(1.10);
+  }
+  #div-detail > button{
+    margin: 0.2em;
+    width: 30%;
+    background-color: rgb(243, 14, 14);
+    color: white;
+    height: 35px;
+    border-style: none;
+    border-radius: 4px;
+    margin-top: 2em;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+  }
+  #sectionDetail>button:hover{
+    transform: scale(1.10);
+  }
+  .plot{
+      text-align: justify;
+  }
+  #imgFilmafiinity{
+      display: flex;
+    justify-content: space-between;
+  }
+  #imgFilmafiinity>img {
+    width: 70px;
+    height: 25px;
+  }
+  #imgSensacine{
+    display: flex;
+  justify-content: space-between;
+  margin-top:2em;
+}
+#imgSensacine>img {
+  width: 70px;
+  height: 25px;
+}
