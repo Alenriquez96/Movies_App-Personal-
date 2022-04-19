@@ -159,12 +159,6 @@ const logoutUser = async (req, res) => {
 //     const u = await db.getUsers();
 //     console.log(u);        
 
-
-
-const google = (req, res) => {
-    res.send('<a href="/auth/google">Authenticate with google </a>')
-}
-
 const googleAuth = passport.authenticate("google", { scope: ['email', 'profile'], prompt: "select_account" });
 const googleCallBack = passport.authenticate('google', { failureRedirect: '/auth/failure' });
 const googleToken = async (req,res)=>{
