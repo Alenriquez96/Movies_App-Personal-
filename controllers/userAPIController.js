@@ -93,7 +93,7 @@ const recoverPassView = (req, res) => {
 const recoverPass = async (req, res) => {
     try {
         const recoverToken = jwt.sign({ email: req.body.email }, config.llaveRecover, { expiresIn: '10m' });
-        const url = `${process.env.URL_BASE}/restorepassword/` + recoverToken;
+        const url = `${process.env.URL_HEROKU}/restorepassword/` + recoverToken;
         await transporter.sendMail({
             to: req.body.email,
             subject: 'Recover Password',
