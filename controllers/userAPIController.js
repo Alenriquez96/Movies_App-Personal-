@@ -218,7 +218,6 @@ const user = {
     restorePass,
     logoutUser,
 
-    google,
     googleAuth,
     googleCallBack,
     googleToken
