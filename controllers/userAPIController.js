@@ -101,7 +101,7 @@ const recoverPass = async (req, res) => {
                 <a href = ${url}>Click to recover password</a>
                 <p>Link will expire in 10 minutes</p>`
         });
-        res.render("auth/emailsent")
+        res.render("auth/emailSent")
     } catch (error) {
         console.log('Error:', error)
     }
