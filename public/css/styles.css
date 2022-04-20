@@ -408,6 +408,13 @@ cursor: pointer;
     transform: scale(1.10);
   }
 
+.mainRoller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .searchForm{
     
     padding: 6px 10px;
@@ -416,6 +423,7 @@ cursor: pointer;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -559,6 +567,7 @@ a {
 }
 
 @media(max-width:768px) {
+
     .hamburger {
         display: block;
         margin-right: 1em;

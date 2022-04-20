@@ -5,7 +5,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 passport.use(new GoogleStrategy({
     clientID: `${process.env.CLIENT_ID}`,
     clientSecret: `${process.env.CLIENT_SECRET}`,
-    callbackURL: `${process.env.URL_HEROKU}/google/callBack`,
+    callbackURL: `${process.env.URL_HEROKU}/google/callBack` || `http://localhost:3000/google/callBack`,
     proxy: true 
   },
   function(request, accessToken, refreshToken, profile, done) {
