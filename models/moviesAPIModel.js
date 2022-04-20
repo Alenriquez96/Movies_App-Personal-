@@ -81,7 +81,7 @@ const createMovie = async (movie) => {
 const updateMovie = async (movie) => {
     let movieId = movie._id;
     const oId = new ObjectId(movieId);
-    const movieToUpdate = await Movie.findById({ _id: oId })
+    const movieToUpdate = await Movie.findById({ _id: oId });
     const updatedMovie = new Movie({
         title: movie.title,
         year: movie.year,
