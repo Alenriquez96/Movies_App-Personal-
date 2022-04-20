@@ -408,10 +408,11 @@ cursor: pointer;
     transform: scale(1.10);
   }
 
-.mainRoller{
+#mainRoller{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     align-items: center;
 }
 
