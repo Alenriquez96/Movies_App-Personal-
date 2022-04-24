@@ -5,9 +5,11 @@ Aplicación web para que, como usuario, crees tu propia filmoteca online, con b�
 # 💻 Librerías
 ```javascript
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "cypress": "^9.5.3",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "helmet": "^5.0.2",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.4.1",
     "mongoose": "^6.2.8",
