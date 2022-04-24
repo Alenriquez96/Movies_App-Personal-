@@ -1,5 +1,7 @@
 // Módulos externos
 const express = require('express');
+const helmet = require("helmet");
+const cors = require('cors');
 
 // Rutas
 const moviesRouter = require('./routes/moviesAPIRoute');
@@ -17,6 +19,9 @@ app.set('views', './views');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(helmet());
+app.use(cors());
 
 
 // Rutas
