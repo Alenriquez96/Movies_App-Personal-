@@ -34,7 +34,7 @@ html(lang="es")
                 p <b>Genre:</b> #{film.info.genres}
                 p <b>Title:</b> #{film.info.title}
                 p.plot  <b>Plot:</b> #{film.info.plot}
-                img(src=film.info.image, alt="Imagen de la película")
+                img(src=film.info.image, alt="Imagen de la película" crossorigin)
                 if reviewS !== 'undefined'
                     div#imgSensacine
                         h4  Review

@@ -31,7 +31,7 @@ html(lang="es")
 
                 each film in films
                     div(class="div-film")  
-                        img(src=film.image, alt="Imagen de la película")
+                        img(src=film.image, alt="Imagen de la película" crossorigin)
                         p Title: #{film.title}
                         p Year: #{film.description}
                         - let idMovie = film.id;

@@ -37,7 +37,7 @@ html(lang="es")
                         p Género: #{film.genre}
                         p Opinión: #{film.rating}
                         p Duración: #{film.duration}                     
-                        img(src=film.image, alt="Imagen de la película") 
+                        img(src=film.image, alt="Imagen de la película" crossorigin) 
                         - var idMovie = film._id;
                         button#removeMovie(class="btn_delete" value = idMovie) Borrar
                         a#editMovie(href='/editMovie/' + idMovie) Editar
